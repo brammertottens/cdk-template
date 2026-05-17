@@ -1,16 +1,6 @@
 # cdk-template
 
-Snapshot-only repository for scanning a synthesized CloudFormation template generated from CDK source.
-
-## Source
-- Source repository local path: `/Users/bottens/git/cdkgoat`
-- Source commit SHA: `c6c0278a49083526c462c80d6ff95e32db83f6a8`
-- Synthesis command used in source repo:
-
-```bash
-cd /Users/bottens/git/cdkgoat
-cdk synth
-```
+Synthesized CloudFormation template used for deployment and infrastructure validation.
 
 ## Scan Target
 - Primary scan file: `templates/cdkgoat.template.json`
@@ -22,10 +12,10 @@ cdk synth
 
 cp cdk.out/cdkgoat.template.json /Users/bottens/git/cdk-template/templates/cdkgoat.template.json
 
-# Update README source commit SHA
+# Update README metadata as needed
 cd /Users/bottens/git/cdk-template
 git add templates/cdkgoat.template.json README.md
-git commit -m "Update CDK template snapshot"
+git commit -m "Update synthesized CloudFormation template"
 git push
 ```
 
